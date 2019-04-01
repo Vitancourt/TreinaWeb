@@ -2,7 +2,11 @@
 
 require 'vendor/autoload.php';
 
-$rota = $_SERVER['PATH_INFO'];
+use Symfony\Component\HttpFoundation\Request;
+
+$request = Request::createFromGlobals();
+
+$rota = $request->getPathInfo();
 
 switch ($rota) {
     case '/':
