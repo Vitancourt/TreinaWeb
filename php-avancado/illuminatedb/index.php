@@ -11,3 +11,4 @@ $produtos = DB::table('produtos')
 $produto4 = DB::table('produtos')
         ->where('id', 4)
         ->get();
+

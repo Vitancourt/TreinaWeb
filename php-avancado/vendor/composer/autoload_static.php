@@ -34,6 +34,10 @@ class ComposerStaticInit9dccd2b872fdf942adf0983518182910
             'Illuminate\\Contracts\\' => 21,
             'Illuminate\\Container\\' => 21,
         ),
+        'H' => 
+        array (
+            'Hashids\\' => 8,
+        ),
         'D' => 
         array (
             'Doctrine\\Common\\Inflector\\' => 26,
@@ -84,6 +88,10 @@ class ComposerStaticInit9dccd2b872fdf942adf0983518182910
         'Illuminate\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/illuminate/container',
+        ),
+        'Hashids\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hashids/hashids/src',
         ),
         'Doctrine\\Common\\Inflector\\' => 
         array (
