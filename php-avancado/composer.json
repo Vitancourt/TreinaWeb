@@ -3,5 +3,8 @@
         "psr-4": {
             "autoload\\": "vendor/autoload"
         }
+    },
+    "require": {
+        "illuminate/database": "^5.8"
     }
 }
