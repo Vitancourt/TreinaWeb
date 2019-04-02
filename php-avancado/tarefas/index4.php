@@ -21,6 +21,14 @@ $app->route('/sobre', function(){
     return new Response('Sobre o projeto.');
 });
 
+$app->route('/produto/{id}', function($id){
+    return new Response('O produto de id igual a <b>' . $id . '</b> foi acessado.');
+});
+
+$app->route('/carro/{nome}/ano/{ano}', function($nome, $ano){
+    return new Response(sprintf('Carro: %s (%s)', $nome, $ano));
+});
+
 // Lida com a requisição
 $request = Request::createFromGlobals();
 $response = $app->handle($request);

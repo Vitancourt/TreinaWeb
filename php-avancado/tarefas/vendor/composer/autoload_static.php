@@ -13,6 +13,7 @@ class ComposerStaticInit3f78eede67fbe0f0a6296ce159fca840
         ),
         'S' => 
         array (
+            'Symfony\\Component\\Routing\\' => 26,
             'Symfony\\Component\\HttpKernel\\' => 29,
             'Symfony\\Component\\HttpFoundation\\' => 33,
             'Symfony\\Component\\EventDispatcher\\' => 34,
@@ -28,6 +29,10 @@ class ComposerStaticInit3f78eede67fbe0f0a6296ce159fca840
         'TreinaWeb\\' => 
         array (
             0 => __DIR__ . '/../..' . '/lib/TreinaWeb',
+        ),
+        'Symfony\\Component\\Routing\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/routing',
         ),
         'Symfony\\Component\\HttpKernel\\' => 
         array (
