@@ -2,5 +2,5 @@
 
 $ctrl = Stox\Controllers\SiteController::class;
 
-$app->get('/', "SiteController::index");
-// $app->get('/rotanova', "$ctrl::rotanova");
+$app->get('/', "$ctrl::index");
+$app->get('/rotanova', "$ctrl::rotanova");
