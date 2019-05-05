@@ -21,28 +21,19 @@ class LoginController
     
     public function save(Application $app)
     {
-        
         $req = $app['request']->request;
-        $usuario = new Usuario(
-                $req->get('nome'),
-                $req->get('email'),
-                $req->get('senha')
-        );
+        $usuario = new Usuario($req->get('nome'), $req->get('email'), $req->get('senha'));
         if ($usuario->save()) {
-            
-            session()->set('success', 'Usuário cadastrado com sucesso');
-            return $app->redirect(URL_BASE.'/login/cadastrar');
-            
+            session()->set('success', 'Usuarios cadastrado com sucesso');
+            return $app->redirect(URL_BASE . '/login/cadastrar');
         }
-
-        session()->set('error', 'Erro ao cadastrar usuário');
-        return $app->redirect(URL_BASE.'/login/cadastrar');
-        
-        
+        session()->set('error', 'Erro ao cadastrar usuario');
+        return $app->redirect(URL_BASE . '/login/cadastrar');
     }
     
     public function login(Application $app)
     {
+        // Obj Req pega valores do post
         $req = $app['request']->request;
         $auth = new BaseAuth;
         
@@ -51,7 +42,10 @@ class LoginController
             return $app->redirect(URL_BASE);
         }
         
-        // Verificar login aqui ...
+        if ($auth->login($req->get('email'), $req->get('senha'))) {
+            $auth->grant();
+            return $app->redirect(URL_AUTH . '/home');
+        }
         
         session()->set('error', 'Usuário ou senha inválido');
         return $app->redirect(URL_BASE);

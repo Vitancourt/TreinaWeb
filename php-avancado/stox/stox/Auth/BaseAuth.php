@@ -8,12 +8,19 @@ class BaseAuth
 {
     public function login($email, $senha)
     {
-        // .. verificar login aqui
+        $user = Usuario::byEmail($email);
+        if ($user) {
+            if ($this->checkHash($senha, $user->senha)) {
+                return true;
+            }
+            return false;
+        }
+        return false;
     }
     
     public function checkHash($senha, $hash)
     {
-        // verifica o hash com password_verify
+        return password_verify($senha, $hash);
     }
     
     public function grant()    
