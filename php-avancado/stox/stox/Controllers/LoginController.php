@@ -19,6 +19,28 @@ class LoginController
         return view()->render('login/cadastrar.twig');
     }
     
+    public function save(Application $app)
+    {
+        
+        $req = $app['request']->request;
+        $usuario = new Usuario(
+                $req->get('nome'),
+                $req->get('email'),
+                $req->get('senha')
+        );
+        if ($usuario->save()) {
+            
+            session()->set('success', 'Usuário cadastrado com sucesso');
+            return $app->redirect(URL_BASE.'/login/cadastrar');
+            
+        }
+
+        session()->set('error', 'Erro ao cadastrar usuário');
+        return $app->redirect(URL_BASE.'/login/cadastrar');
+        
+        
+    }
+    
     public function login(Application $app)
     {
         $req = $app['request']->request;

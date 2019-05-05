@@ -24,7 +24,7 @@ class Usuario
     
     public function setSenha($senha)
     {
-        // gerar o hash antes de salvar no DB
+        $this->senha = password_hash('$senha', PASSWORD_BCRYPT);
     }
     
     public function getSenha()
