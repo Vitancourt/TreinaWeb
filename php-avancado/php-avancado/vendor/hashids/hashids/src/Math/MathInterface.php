@@ -12,13 +12,13 @@
 namespace Hashids\Math;
 
 /**
- * This is the Bc math class.
+ * Interface for different math extensions.
  *
- * @author Vincent Klaiber <hello@doubledip.se>
+ * @author Vincent Klaiber <hello@vinkla.com>
  * @author Jakub Kramarz <lenwe@lenwe.net>
  * @author Johnson Page <jwpage@gmail.com>
  */
-class Bc implements MathInterface
+interface MathInterface
 {
     /**
      * Add two arbitrary-length integers.
@@ -28,10 +28,7 @@ class Bc implements MathInterface
      *
      * @return string
      */
-    public function add($a, $b)
-    {
-        return bcadd($a, $b, 0);
-    }
+    public function add($a, $b);
 
     /**
      * Multiply two arbitrary-length integers.
@@ -41,10 +38,7 @@ class Bc implements MathInterface
      *
      * @return string
      */
-    public function multiply($a, $b)
-    {
-        return bcmul($a, $b, 0);
-    }
+    public function multiply($a, $b);
 
     /**
      * Divide two arbitrary-length integers.
@@ -54,10 +48,7 @@ class Bc implements MathInterface
      *
      * @return string
      */
-    public function divide($a, $b)
-    {
-        return bcdiv($a, $b, 0);
-    }
+    public function divide($a, $b);
 
     /**
      * Compute arbitrary-length integer modulo.
@@ -67,10 +58,7 @@ class Bc implements MathInterface
      *
      * @return string
      */
-    public function mod($n, $d)
-    {
-        return bcmod($n, $d);
-    }
+    public function mod($n, $d);
 
     /**
      * Compares two arbitrary-length integers.
@@ -80,10 +68,7 @@ class Bc implements MathInterface
      *
      * @return bool
      */
-    public function greaterThan($a, $b)
-    {
-        return bccomp($a, $b, 0) > 0;
-    }
+    public function greaterThan($a, $b);
 
     /**
      * Converts arbitrary-length integer to PHP integer.
@@ -92,10 +77,7 @@ class Bc implements MathInterface
      *
      * @return int
      */
-    public function intval($a)
-    {
-        return intval($a);
-    }
+    public function intval($a);
 
     /**
      * Converts arbitrary-length integer to PHP string.
@@ -104,10 +86,7 @@ class Bc implements MathInterface
      *
      * @return string
      */
-    public function strval($a)
-    {
-        return $a;
-    }
+    public function strval($a);
 
     /**
      * Converts PHP integer to arbitrary-length integer.
@@ -116,8 +95,5 @@ class Bc implements MathInterface
      *
      * @return string
      */
-    public function get($a)
-    {
-        return $a;
-    }
+    public function get($a);
 }

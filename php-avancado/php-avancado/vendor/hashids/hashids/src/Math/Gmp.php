@@ -12,13 +12,13 @@
 namespace Hashids\Math;
 
 /**
- * This is the Bc math class.
+ * This is the Gmp math class.
  *
- * @author Vincent Klaiber <hello@doubledip.se>
+ * @author Vincent Klaiber <hello@vinkla.com>
  * @author Jakub Kramarz <lenwe@lenwe.net>
  * @author Johnson Page <jwpage@gmail.com>
  */
-class Bc implements MathInterface
+class Gmp implements MathInterface
 {
     /**
      * Add two arbitrary-length integers.
@@ -30,7 +30,7 @@ class Bc implements MathInterface
      */
     public function add($a, $b)
     {
-        return bcadd($a, $b, 0);
+        return gmp_add($a, $b);
     }
 
     /**
@@ -43,7 +43,7 @@ class Bc implements MathInterface
      */
     public function multiply($a, $b)
     {
-        return bcmul($a, $b, 0);
+        return gmp_mul($a, $b);
     }
 
     /**
@@ -56,7 +56,7 @@ class Bc implements MathInterface
      */
     public function divide($a, $b)
     {
-        return bcdiv($a, $b, 0);
+        return gmp_div_q($a, $b);
     }
 
     /**
@@ -69,7 +69,7 @@ class Bc implements MathInterface
      */
     public function mod($n, $d)
     {
-        return bcmod($n, $d);
+        return gmp_mod($n, $d);
     }
 
     /**
@@ -82,7 +82,7 @@ class Bc implements MathInterface
      */
     public function greaterThan($a, $b)
     {
-        return bccomp($a, $b, 0) > 0;
+        return gmp_cmp($a, $b) > 0;
     }
 
     /**
@@ -94,7 +94,7 @@ class Bc implements MathInterface
      */
     public function intval($a)
     {
-        return intval($a);
+        return gmp_intval($a);
     }
 
     /**
@@ -106,7 +106,7 @@ class Bc implements MathInterface
      */
     public function strval($a)
     {
-        return $a;
+        return gmp_strval($a);
     }
 
     /**
@@ -118,6 +118,6 @@ class Bc implements MathInterface
      */
     public function get($a)
     {
-        return $a;
+        return gmp_init($a);
     }
 }
