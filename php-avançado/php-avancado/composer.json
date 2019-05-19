@@ -1,0 +1,14 @@
+{
+    "autoload": {
+        "psr-4": {
+            "autoload\\": "vendor/autoload"
+        }
+    },
+    "require": {
+        "illuminate/database": "^5.8",
+        "hashids/hashids": "^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.1"
+    }
+}
