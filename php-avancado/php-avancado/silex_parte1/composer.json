@@ -8,6 +8,6 @@
     "require" : {
         "silex/silex" : "~1.3",
         "twig/twig" : "1.22.*",
-        "illuminate/database": "5.1.x"
+        "illuminate/database": "6.20.14"
     }
 }
