@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "hash": "928a8abe6aac3d3d9e13049206347ebc",
+    "content-hash": "4587701504d679bd4a507059a2f66e78",
     "packages": [
         {
             "name": "danielstjules/stringy",
@@ -29,12 +29,12 @@
             },
             "type": "library",
             "autoload": {
-                "psr-4": {
-                    "Stringy\\": "src/"
-                },
                 "files": [
                     "src/Create.php"
-                ]
+                ],
+                "psr-4": {
+                    "Stringy\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -60,7 +60,7 @@
                 "utility",
                 "utils"
             ],
-            "time": "2015-07-23 00:54:12"
+            "time": "2015-07-23T00:54:12+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -127,7 +127,7 @@
                 "singularize",
                 "string"
             ],
-            "time": "2014-12-20 21:24:13"
+            "time": "2014-12-20T21:24:13+00:00"
         },
         {
             "name": "illuminate/container",
@@ -170,7 +170,7 @@
             ],
             "description": "The Illuminate Container package.",
             "homepage": "http://laravel.com",
-            "time": "2015-08-26 23:00:38"
+            "time": "2015-08-26T23:00:38+00:00"
         },
         {
             "name": "illuminate/contracts",
@@ -212,7 +212,7 @@
             ],
             "description": "The Illuminate Contracts package.",
             "homepage": "http://laravel.com",
-            "time": "2015-08-31 12:59:22"
+            "time": "2015-08-31T12:59:22+00:00"
         },
         {
             "name": "illuminate/database",
@@ -271,7 +271,7 @@
                 "orm",
                 "sql"
             ],
-            "time": "2015-09-03 14:53:32"
+            "time": "2015-09-03T14:53:32+00:00"
         },
         {
             "name": "illuminate/support",
@@ -305,12 +305,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Illuminate\\Support\\": ""
-                },
                 "files": [
                     "helpers.php"
-                ]
+                ],
+                "psr-4": {
+                    "Illuminate\\Support\\": ""
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -324,7 +324,7 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "http://laravel.com",
-            "time": "2015-09-03 15:47:41"
+            "time": "2015-09-03T15:47:41+00:00"
         },
         {
             "name": "knplabs/knp-snappy",
@@ -387,7 +387,7 @@
                 "thumbnail",
                 "wkhtmltopdf"
             ],
-            "time": "2015-09-16 12:34:39"
+            "time": "2015-09-16T12:34:39+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -434,7 +434,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2015-06-25 04:19:39"
+            "time": "2015-06-25T04:19:39+00:00"
         },
         {
             "name": "pimple/pimple",
@@ -480,7 +480,7 @@
                 "container",
                 "dependency injection"
             ],
-            "time": "2013-11-22 08:30:29"
+            "time": "2013-11-22T08:30:29+00:00"
         },
         {
             "name": "psr/log",
@@ -518,7 +518,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2012-12-21 11:40:51"
+            "time": "2012-12-21T11:40:51+00:00"
         },
         {
             "name": "silex/silex",
@@ -595,7 +595,8 @@
             "keywords": [
                 "microframework"
             ],
-            "time": "2015-09-15 06:53:42"
+            "abandoned": "symfony/flex",
+            "time": "2015-09-15T06:53:42+00:00"
         },
         {
             "name": "symfony/debug",
@@ -650,7 +651,8 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2015-09-14 08:41:38"
+            "abandoned": "symfony/error-handler",
+            "time": "2015-09-14T08:41:38+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -708,7 +710,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2015-09-22 13:49:29"
+            "time": "2015-09-22T13:49:29+00:00"
         },
         {
             "name": "symfony/http-foundation",
@@ -761,7 +763,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
-            "time": "2015-09-22 13:49:29"
+            "time": "2015-09-22T13:49:29+00:00"
         },
         {
             "name": "symfony/http-kernel",
@@ -841,7 +843,86 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "https://symfony.com",
-            "time": "2015-09-25 11:16:52"
+            "time": "2015-09-25T11:16:52+00:00"
+        },
+        {
+            "name": "symfony/polyfill-ctype",
+            "version": "v1.26.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-ctype.git",
+                "reference": "6fd1b9a79f6e3cf65f9e679b23af304cd9e010d4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/6fd1b9a79f6e3cf65f9e679b23af304cd9e010d4",
+                "reference": "6fd1b9a79f6e3cf65f9e679b23af304cd9e010d4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "provide": {
+                "ext-ctype": "*"
+            },
+            "suggest": {
+                "ext-ctype": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.26-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gert de Pagter",
+                    "email": "BackEndTea@gmail.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for ctype functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "ctype",
+                "polyfill",
+                "portable"
+            ],
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-05-24T11:49:31+00:00"
         },
         {
             "name": "symfony/process",
@@ -890,7 +971,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2015-09-19 19:59:23"
+            "time": "2015-09-19T19:59:23+00:00"
         },
         {
             "name": "symfony/routing",
@@ -961,7 +1042,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2015-09-14 14:14:09"
+            "time": "2015-09-14T14:14:09+00:00"
         },
         {
             "name": "symfony/translation",
@@ -1022,38 +1103,42 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
-            "time": "2015-09-06 08:36:38"
+            "time": "2015-09-06T08:36:38+00:00"
         },
         {
             "name": "twig/twig",
-            "version": "v1.22.3",
+            "version": "v1.44.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "ebfc36b7e77b0c1175afe30459cf943010245540"
+                "reference": "0887422319889e442458e48e2f3d9add1a172ad5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/ebfc36b7e77b0c1175afe30459cf943010245540",
-                "reference": "ebfc36b7e77b0c1175afe30459cf943010245540",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/0887422319889e442458e48e2f3d9add1a172ad5",
+                "reference": "0887422319889e442458e48e2f3d9add1a172ad5",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.2.7"
+                "php": ">=7.2.5",
+                "symfony/polyfill-ctype": "^1.8"
             },
             "require-dev": {
-                "symfony/debug": "~2.7",
-                "symfony/phpunit-bridge": "~2.7"
+                "psr/container": "^1.0",
+                "symfony/phpunit-bridge": "^4.4.9|^5.0.9"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.22-dev"
+                    "dev-master": "1.44-dev"
                 }
             },
             "autoload": {
                 "psr-0": {
                     "Twig_": "lib/"
+                },
+                "psr-4": {
+                    "Twig\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1068,22 +1153,31 @@
                     "role": "Lead Developer"
                 },
                 {
+                    "name": "Twig Team",
+                    "role": "Contributors"
+                },
+                {
                     "name": "Armin Ronacher",
                     "email": "armin.ronacher@active-4.com",
                     "role": "Project Founder"
-                },
-                {
-                    "name": "Twig Team",
-                    "homepage": "http://twig.sensiolabs.org/contributors",
-                    "role": "Contributors"
                 }
             ],
             "description": "Twig, the flexible, fast, and secure template language for PHP",
-            "homepage": "http://twig.sensiolabs.org",
+            "homepage": "https://twig.symfony.com",
             "keywords": [
                 "templating"
             ],
-            "time": "2015-10-13 07:07:02"
+            "funding": [
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/twig/twig",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-09-28T08:38:36+00:00"
         }
     ],
     "packages-dev": [],
@@ -1093,5 +1187,6 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
